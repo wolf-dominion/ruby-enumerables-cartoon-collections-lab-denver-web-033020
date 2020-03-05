@@ -6,7 +6,7 @@ end
 
 def summon_captain_planet(array)
   array.collect do |n|
-    "#{n.}!"
+    "#{n.Capitalize}!"
   end
 end
 
