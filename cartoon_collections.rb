@@ -18,7 +18,18 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-
   
+  result = ''
+  
+  array.each do |n|
+  # compare n to each element in cheese_types
+    cheese_types.each do |c|
+      if n == c
+        result = n
+        break
+      else
+        result = nil
+    end
+  end
 
 end
