@@ -19,17 +19,8 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   
-  result = nil
- 
-  p array
-  array.each do |n|
-  # compare n to each element in cheese_types
-    cheese_types.each do |c|
-      if n == c
-        result = n
-        return result
-      end
-    end
+  result = array.find do |n|
+    cheese_types.include?(n)
   end
-  result
+  
 end
