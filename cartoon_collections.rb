@@ -5,9 +5,9 @@ def roll_call_dwarves(array)
 end
 
 def summon_captain_planet(array)
-  array.each_with_index do |item, index|
-  puts "#{index+1} #{item}"
-end
+  array.collect do |n|
+    "#{n.}!"
+  end
 end
 
 def long_planeteer_calls()
