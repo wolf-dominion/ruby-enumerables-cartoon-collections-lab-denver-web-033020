@@ -26,6 +26,7 @@ def find_the_cheese(array)
     cheese_types.each do |c|
       if n == c
         result = n
+        break
       end
     end
   end
